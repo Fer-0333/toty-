@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toty Flow — Spa & Beauty</title>
+  <meta name="description" content="Toty Flow — Cuidado facial, spa y uñas. Experiencias de belleza en tu ciudad." />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <svg width="220" height="56" viewBox="0 0 440 112" xmlns="http://www.w3.org/2000/svg">
+          <text x="10" y="72" font-family="'Great Vibes', cursive" font-size="72" fill="#5A2E8A">Toty</text>
+          <text x="210" y="72" font-family="'Montserrat', sans-serif" font-weight="600" font-size="44" fill="#8B5ED6">Flow</text>
+        </svg>
+      </a>
+
+      <nav class="nav">
+        <button id="navToggle" class="nav-toggle">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto" class="cta">Reserva</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Bienvenida a <span>Toty Flow</span></h1>
+          <p>Espacio de belleza dedicado al cuidado facial, spa y uñas. Relájate, renueva y brilla.</p>
+          <a href="#contacto" class="btn-primary">Reserva ahora</a>
+        </div>
+        <div class="hero-image">
+    <img src="imagen.jpg" alt="imagen">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="services">
+      <div class="container">
+        <h2>Nuestros servicios</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Cuidado facial</h3>
+            <p>Tratamientos personalizados para todo tipo de piel: limpiezas, hidratación profunda y masajes faciales.</p>
+          </article>
+
+          <article class="card">
+            <h3>Spa & Relajación</h3>
+            <p>Rituales de relajación, exfoliación corporal y envolturas para que salgas renovada.</p>
+          </article>
+
+          <article class="card">
+            <h3>Uñas & Manicure</h3>
+            <p>Manicure, pedicure, acrílicas y diseños exclusivos adaptados a tu estilo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="about">
+      <div class="container">
+        <h2>Sobre Toty Flow</h2>
+        <p>Somos un centro de belleza local comprometido con la armonía y el cuidado integral. Nuestro equipo profesional utiliza productos de alta calidad y técnicas actualizadas para garantizar resultados visibles.</p>
+      </div>
+    </section>
+
+    <section id="galeria" class="gallery">
+      <div class="container">
+        <h2>Galería</h2>
+        <div class="grid">
+          <img src="imagen1.jpg" alt="imagen1">
+          <img src="imagen2.jpG" alt="imagen2">
+          <img src="imagen3.jpg" alt="imagen3">
+          <img src="imagen4.jpg" alt="imagen4">
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="container contact-inner">
+        <div class="contact-form">
+          <h2>Reserva tu cita</h2>
+          <form id="bookingForm" novalidate>
+            <div class="field-row">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="field-row">
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="field-row">
+              <label for="service">Servicio</label>
+              <select id="service" name="service" required>
+                <option value="">-- Selecciona --</option>
+                <option value="facial">Cuidado facial</option>
+                <option value="spa">Spa</option>
+                <option value="uñas">Uñas</option>
+              </select>
+            </div>
+            
+        
+
+        <div class="contact-info">
+          <h3>Visítanos</h3>
+          <p>GUINEO CANALETE — GUINEO</p>
+          <p>Tel: +57 3225067472</p>
+          <p>Horario: Lun - Vie 9:00 – 19:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Toty Flow — Spa & Beauty</p>
+      <p class="small">Diseño lila elegante y moderno.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+:root {
+  --lila-1: #efe6fb;
+  --lila-2: #cbb7f5;
+  --lila-3: #8B5ED6;
+  --lila-4: #5A2E8A;
+  --muted: #6b6b6b;
+  --radius: 16px;
+  --container: 1100px;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, var(--lila-1), #fbf8ff 40%);
+  color: #222;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.site-header { background: transparent; position: sticky; top: 0; padding: 0.6rem 0; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; }
+.nav-list { display: flex; gap: 1rem; list-style: none; margin: 0; padding: 0; }
+.nav-list a { text-decoration: none; color: var(--lila-4); font-weight: 600; }
+.nav-list .cta { background: var(--lila-3); color: white; padding: 0.6rem 1rem; border-radius: 12px; }
+
+/* Hero */
+.hero { padding: 3rem 0; }
+.hero-inner { display: grid; grid-template-columns: 1fr 420px; gap: 2rem; align-items: center; }
+.hero h1 { color: var(--lila-4); }
+.hero h1 span { font-family: 'Great Vibes', cursive; color: var(--lila-3); font-size: 2.8rem; }
+.btn-primary { background: linear-gradient(90deg, var(--lila-3), var(--lila-4)); color: white; padding: 0.75rem 1.25rem; border-radius: 12px; text-decoration: none; }
+.hero-image .placeholder { background: linear-gradient(180deg, #fff, #f6f0ff); border-radius: 20px; height: 260px; display: flex; align-items: center; justify-content: center; color: var(--lila-4); box-shadow: 0 8px 30px rgba(90,46,138,0.12); }
+
+/* Services */
+.services { padding: 2rem 0; }
+.cards { display: flex; gap: 1rem; flex-wrap: wrap; }
+.card { flex: 1 1 220px; background: white; border-radius: 14px; box-shadow: 0 6px 20px rgba(90,46,138,0.06); padding: 1rem; }
+.card h3 { color: var(--lila-4); }
+
+/* Contact */
+.contact-inner { display: grid; grid-template-columns: 1fr 320px; gap: 2rem; }
+.contact-form, .contact-info { background: white; padding: 1.25rem; border-radius: 14px; box-shadow: 0 6px 20px rgba(90,46,138,0.06); }
+.field-row { margin-bottom: 0.75rem; display: flex; flex-direction: column; gap: 0.3rem; }
+input, select { border: 1px solid #eee; padding: 0.6rem; border-radius: 10px; }
+.form-message { color: var(--lila-4); margin-top: 0.5rem; }
+
+/* Footer */
+.site-footer { text-align: center; color: var(--muted); padding: 1rem 0; }
+
+
+
